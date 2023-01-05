@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 10px 0px;
+            box-shadow: 2px 1px 5px 1px rgb(0 0 0 / 43%);
+        }
+
+        #titulo{
+            background-color: black;
+            color: white;
+            margin: 1px auto;
+            width: 150px;
+            border: 5px groove white;
+            box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.438);
+        }
+
+        nav{
+            background-color: white;
+            padding: 3px;
+            width: 150px;
+            margin: auto;
+            border: 5px groove black;
+            box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.432);
+        }
+
+        nav > a{
+            background-color: lightgrey;
+            color: black;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav > a:hover{
+            background-color: black;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav > a::after{
+            content:' ⇦';
+        }
+
+        nav > a::before{
+            content: '⇨ ';
+        }
+
+        main{
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 2px 1px 5px 1px rgb(0 0 0 / 43%);
+        }
+
+        section{
+            background-color: white;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        #nomesecreto {
+            display: none;
+            margin: auto;
+            padding: 1px;
+        }
+
+        footer:hover > #nomesecreto {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Meu Site:</h1> <hr>
+        <nav>
+            <a href="..//ex020/pseudoclasses.html" target="_blank">Link 1</a>
+            <a href="#" target="_blank">Link 2</a>
+            <a href="#" target="_blank">Link 3</a>
+        </nav>
+    </header>
+    <main>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o HBDM:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus animi dicta similique voluptates earum ab consequatur libero reprehenderit magni ullam corporis, cumque neque dolores ratione, quibusdam debitis dolorem facilis vero? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima inventore sed repudiandae nihil omnis quae ad aut quam consequatur facilis ut porro non velit quisquam, vero impedit? Repudiandae, at? Quis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem a eligendi incidunt, quos perspiciatis labore reiciendis, quo distinctio sunt tempore fugiat voluptatum obcaecati omnis, aut ab molestias eveniet libero est.</p>
+                <aside>
+                    <p>Escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por HBDM</p>
+        
+        <p id="nomesecreto">Hyago Brucy Dias Martins</p>
+    </footer>
+</body>
+</html>
