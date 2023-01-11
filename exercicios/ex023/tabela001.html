@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Tabela</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+
+        tr{
+            background-color: lightgray;
+        }
+
+        tr.linha{
+            background-color: yellow;
+        }
+
+        td{
+            border: 1px solid black;
+            width: 100px;
+            padding: 5px;
+        }
+
+        td.dado{
+            background-color: aquamarine;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Minha tabela:</h1> <hr>
+
+    <table>
+        <tr class="linha"> 
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td class="dado">B2</td>
+            <td>C2</td>
+        </tr>
+        <tr class="linha">
+            <td>A3</td>
+            <td class="dado">B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+        </tr>
+        <tr class="linha">
+            <td>A5</td>
+        </tr>
+    </table>
+</body>
+</html>
