@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body{
+    background-color: white;
+}
+
+div:hover:not(:hover){
+    opacity: 0.3;
+}
+
+img:hover{
+    scale: 1.1;
+}
+
+img#vsc{
+    width: 10vw;
+}
+
+img#html{
+    width: 10vw;
+}
+
+img#css{
+    width: 10vw;
+}
