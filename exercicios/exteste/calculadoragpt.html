@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora GPT</title>
+    <style>
+        .calculator {
+            width: 200px;
+            padding: 10px;
+            background-color: #5939a5;
+            border: 1px solid #2f2966;
+            border-radius: 5px;
+            }
+
+        .answer-box {
+            width: 100%;
+            margin-bottom: 10px;
+            font-size: 24px;
+            text-align: right;
+            padding-right: 5px;
+            }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <form name="calculator">
+          <input type="text" name="answer" class="answer-box">
+          <br>
+          <input type="button" value="sete" onClick="calculator.answer.value += '7'">
+          <input type="button" value="oito" onClick="calculator.answer.value += '8'">
+          <input type="button" value="nove" onClick="calculator.answer.value += '9'">
+          <input type="button" value="+" onClick="calculator.answer.value += '+'">
+          <br>
+          <input type="button" value="quatro" onClick="calculator.answer.value += '4'">
+          <input type="button" value="cinco" onClick="calculator.answer.value += '5'">
+          <input type="button" value="seis" onClick="calculator.answer.value += '6'">
+          <input type="button" value="-" onClick="calculator.answer.value += '-'">
+          <br>
+          <input type="button" value="um" onClick="calculator.answer.value += '1'">
+          <input type="button" value="dois" onClick="calculator.answer.value += '2'">
+          <input type="button" value="três" onClick="calculator.answer.value += '3'">
+          <input type="button" value="*" onClick="calculator.answer.value += '*'">
+          <br>
+          <input type="button" value="zero" onClick="calculator.answer.value += '0'">
+          <input type="button" value="C" onClick="calculator.answer.value = ''">
+          <input type="button" value="/" onClick="calculator.answer.value += '/'">
+          <input type="button" value="=" onClick="calculator.answer.value = eval(calculator.answer.value)">
+        </form>
+      </div>
+    </body>
+</html>
